@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --brand-200: rgba(61, 49, 41, 1);
+    --brand-250: rgba(77, 66, 51, 1);
+    --brand-300: rgba(99, 73, 54, 1);
+    --brandprimary: rgba(121, 85, 61, 1);
+    --brand-400: rgba(122, 99, 82, 1);
+    --brand-500: rgba(140, 125, 115, 1);
+    --brand-600: rgba(173, 150, 133, 1);
+    --brand-700: rgba(198, 175, 159, 1);
+    --brand-800: rgba(219, 201, 189, 1);
+    --brand-900: rgba(240, 228, 219, 1);
+    --brand-950: rgba(248, 241, 237, 1);
+    --brand-980: rgba(252, 250, 248, 1);
+    --green-900: rgba(226, 240, 219, 1);
+    --green-950: rgba(240, 249, 236, 1);
+    --teal-350: rgba(4, 174, 146, 1);
+    --teal-980: rgba(247, 252, 252, 1);
+    --teal-600: rgba(102, 204, 187, 1);
+    --teal-500: rgba(77, 178, 161, 1);
+    --teal-250: rgba(0, 128, 106, 1);
+    --teal-95-0a: rgba(238, 246, 245, 1);
+    --teal-900: rgba(217, 242, 238, 1);
+    --teal-800: rgba(181, 227, 219, 1);
+    --teal-99-0a: rgba(252, 253, 253, 1);
+    --teal-700: rgba(140, 217, 204, 1);
+    --text-250: rgba(49, 41, 86, 1);
+    --text-950: rgba(239, 238, 247, 1);
+    --text-850: rgba(210, 207, 226, 1);
+}
+
+
+body{
+    margin: 0;
+    font-family: Outfit, Raleway, -apple-system, sans-serif;
+}

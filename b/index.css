@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --brand-200: rgba(61, 49, 41, 1);
+    --brand-250: rgba(77, 66, 51, 1);
+    --brand-300: rgba(99, 73, 54, 1);
+    --brandprimary: rgba(121, 85, 61, 1);
+    --brand-400: rgba(122, 99, 82, 1);
+    --brand-500: rgba(140, 125, 115, 1);
+    --brand-600: rgba(173, 150, 133, 1);
+    --brand-700: rgba(198, 175, 159, 1);
+    --brand-800: rgba(219, 201, 189, 1);
+    --brand-900: rgba(240, 228, 219, 1);
+    --brand-950: rgba(248, 241, 237, 1);
+    --brand-980: rgba(252, 250, 248, 1);
+    --green-900: rgba(226, 240, 219, 1);
+    --green-950: rgba(240, 249, 236, 1);
+    --green-300: rgba(63, 120, 35, 1);
+    --teal-350: rgba(4, 174, 146, 1);
+    --teal-980: rgba(247, 252, 252, 1);
+    --teal-600: rgba(102, 204, 187, 1);
+    --teal-500: rgba(77, 178, 161, 1);
+    --teal-250: rgba(0, 128, 106, 1);
+    --teal-95-0a: rgba(238, 246, 245, 1);
+    --teal-900: rgba(217, 242, 238, 1);
+    --teal-800: rgba(181, 227, 219, 1);
+    --teal-99-0a: rgba(252, 253, 253, 1);
+    --teal-700: rgba(140, 217, 204, 1);
+    --teal-230: rgba(1, 115, 96, 1);
+    --text-250: rgba(49, 41, 86, 1);
+    --text-950: rgba(239, 238, 247, 1);
+    --text-850: rgba(210, 207, 226, 1);
+    --text-450: rgba(107, 103, 126, 1);
+    --text-750: rgba(185, 182, 201, 1);
+    --text-650: rgba(159, 156, 177, 1);
+}
+
+
+*{
+    margin: 0;
+    font-family: Outfit, sans-serif;
+}
+
+.desktop {
+    background-color: #fcfaf7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.desktop .div {
+    background-color: var(--brand-980);
+    width: 100%;
+    height: 110vh;
+    position: relative;
+}
+
+.desktop .hero-box {
+    position: absolute;
+    width: 854px;
+    height: 467px;
+    top: 126px;
+    left: 232px;
+    border-radius: 15px 65px 15px 65px;
+    overflow: hidden;
+    border: 4px solid;
+    border-color: var(--brand-900);
+}
+
+.desktop .got-an-old-wardrobe {
+    position: absolute;
+    top: 57px;
+    left: 83px;
+    font-weight: 800;
+    color: var(--brandprimary);
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .every-day-so-many {
+    position: absolute;
+    top: 198px;
+    left: 83px;
+    font-weight: 500;
+    color: var(--brand-500);
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .frame {
+    position: absolute;
+    width: 294px;
+    height: 45px;
+    top: 350px;
+    left: 83px;
+    background-color: var(--teal-250);
+    border-radius: 64px;
+    overflow: hidden;
+}
+
+.desktop .text-wrapper {
+    position: absolute;
+    top: 9px;
+    left: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .sign-up-to-wrapper {
+    position: absolute;
+    width: 198px;
+    height: 45px;
+    top: 350px;
+    left: 396px;
+    background-color: var(--teal-900);
+    border-radius: 64px;
+    overflow: hidden;
+}
+
+.desktop .sign-up-to {
+    left: 47px;
+    position: absolute;
+    top: 8px;
+    font-weight: 500;
+    color: var(--teal-230);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .item-list {
+    position: absolute;
+    width: 1456px;
+    height: 348px;
+    top: 641px;
+    left: 232px;
+    background-color: var(--brand-900);
+    border-radius: 65px 65px 15px 15px;
+    overflow: hidden;
+}
+
+.desktop .list {
+    display: flex;
+    width: 1349px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    top: 95px;
+    left: 53px;
+}
+
+.desktop .item {
+    position: relative;
+    width: 313px;
+    height: 207px;
+    background-color: var(--teal-250);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.desktop .what-the-govt-is {
+    position: absolute;
+    width: 313px;
+    height: 125px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.desktop .text-wrapper-2 {
+    position: absolute;
+    top: 139px;
+    left: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .text-wrapper-3 {
+    position: absolute;
+    top: 166px;
+    left: 22px;
+    font-weight: 500;
+    color: var(--green-900);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .text-wrapper-4 {
+    position: absolute;
+    top: 166px;
+    left: 223px;
+    font-weight: 500;
+    color: var(--brand-900);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .item-secondary {
+    position: relative;
+    width: 242px;
+    height: 207px;
+    background-color: var(--teal-900);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: var(--teal-250);
+}
+
+.desktop .img {
+    position: absolute;
+    width: 242px;
+    height: 125px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.desktop .text-wrapper-5 {
+    position: absolute;
+    top: 138px;
+    left: 22px;
+    font-weight: 600;
+    color: var(--teal-230);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .text-wrapper-6 {
+    position: absolute;
+    top: 165px;
+    left: 22px;
+    font-weight: 500;
+    color: var(--green-300);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .p {
+    position: absolute;
+    top: 31px;
+    left: 83px;
+    font-weight: 600;
+    color: var(--brandprimary);
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .image {
+    position: absolute;
+    width: 555px;
+    height: 464px;
+    top: 129px;
+    left: 1133px;
+    object-fit: cover;
+}
+
+.desktop .nav {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: var(--brand-950);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-color: var(--brand-900);
+}
+
+.desktop .nav-wrapper {
+    position: relative;
+    width: 1469px;
+    height: 45px;
+    top: 17px;
+    left: 225px;
+}
+
+.desktop .freecycling-new {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    font-weight: 400;
+    color: var(--brandprimary);
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .span {
+    font-weight: 700;
+}
+
+.desktop .text-wrapper-7 {
+}
+
+.desktop .frame-2 {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 32px;
+    position: absolute;
+    top: 10px;
+    left: 962px;
+}
+
+.desktop .text-wrapper-8 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-weight: 500;
+    color: var(--brandprimary);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .button-tertiary {
+    position: absolute;
+    width: 171px;
+    height: 45px;
+    top: 0;
+    left: 1298px;
+    border-radius: 64px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: var(--teal-350);
+}
+
+.desktop .sign-up-to-2 {
+    left: 35px;
+    position: absolute;
+    top: 8px;
+    font-weight: 500;
+    color: var(--teal-230);
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .search {
+    position: absolute;
+    width: 506px;
+    height: 51px;
+    top: -2px;
+    left: 372px;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.desktop .text-wrapper-9 {
+    position: absolute;
+    top: 11px;
+    left: 58px;
+    font-weight: 400;
+    color: var(--text-450);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop .vector {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 18px;
+    left: 22px;
+}
+
+.desktop .div-wrapper {
+    position: absolute;
+    width: 107px;
+    height: 37px;
+    top: 7px;
+    left: 392px;
+    background-color: var(--teal-900);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.desktop .text-wrapper-10 {
+    position: absolute;
+    top: 5px;
+    left: 23px;
+    font-weight: 500;
+    color: var(--teal-230);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
