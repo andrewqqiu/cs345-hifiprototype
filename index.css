@@ -44,13 +44,13 @@
 
 
     /* Font sizes */
-    --fontsize-h1: 48px;
-    --fontsize-h2: 28px;
-    --fontsize-h3: 22px;
-    --fontsize-lrg: 20px;
-    --fontsize-med: 18px;
-    --fontsize-reg: 16px;
-    --fontsize-sml: 14px;
+    --fontsize-h1: 2.6rem;
+    --fontsize-h2: 1.6rem;
+    --fontsize-h3: 1.4rem;
+    --fontsize-lrg: 1.2rem;
+    --fontsize-med: 1.13rem;
+    --fontsize-reg: 1rem;
+    --fontsize-sml: 0.9rem;
 
     --font-stack: Outfit, Raleway, -apple-system, sans-serif;
 }
@@ -68,6 +68,7 @@
 body{
     margin: 0;
     font-family: var(--font-stack);
+    font-size: var(--fontsize-reg);
 
     background-color: var(--brand-980);
 }
@@ -105,15 +106,15 @@ button:hover{
 
 /* General components */
 .button-primary{
-    padding: 10px 45px;
-    height: 45px;
+    padding: 10px 2.5rem;
+    height: 2.5rem;
 
     border-radius: 100px;
     border-style: none;
     overflow: hidden;
     background-color: var(--teal-250);
 
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
     font-weight: 600;
     color: white;
 
@@ -126,15 +127,15 @@ button:hover{
 }
 
 .button-secondary{
-    padding: 10px 45px;
-    height: 45px;
+    padding: 10px 2.5rem;
+    height: 2.5rem;
 
     border-radius: 100px;
     border-style: none;
     overflow: hidden;
     background-color: var(--teal-900);
 
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
     font-weight: 500;
     color: var(--teal-230);
 
@@ -147,8 +148,8 @@ button:hover{
 }
 
 .button-tertiary{
-    padding: 0 35px;
-    height: 45px;
+    padding: 0 2rem;
+    height: 2.5rem;
 
     border-radius: 100px;
     overflow: hidden;
@@ -156,6 +157,7 @@ button:hover{
     border-color: var(--teal-350);
     background-color: transparent;
 
+    font-size: var(--fontsize-med);
     color: var(--teal-230);
     font-weight: 500;
 
@@ -175,7 +177,7 @@ button:hover{
 /* Nav styles */
 .header{
     width: 100%;
-    height: 80px;
+    height: 4rem;
     top: 0;
 
     background-color: var(--brand-950);
@@ -183,7 +185,7 @@ button:hover{
     border-bottom-style: solid;
     border-color: var(--brand-900);
 
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-reg);
 
     display: flex;
     align-items: center;
@@ -193,7 +195,7 @@ button:hover{
     position: relative;
 
     margin: 0 auto;
-    width: 85%;
+    width: 70%;
     max-width: 1500px;
 
     display: flex;
@@ -206,33 +208,40 @@ button:hover{
 }
 
 .header-search{
+    height: 45px;
     display: flex;
-    padding: 10px;
+    padding: 0 0.3rem;
 
     background-color: #fcfcfc;
     border-radius: 15px;
+
+    align-items: center;
 }
 .search-icon{
-    padding: 0 10px;
+    transform: scale(0.9);
+    padding: 0 0.5rem;
+
+    opacity: 50%;
 }
 .search-input{
-    padding: 0 10px;
-    width: 400px;
+    padding: 0 0.5rem;
+    width: 20rem;
 
     border-style: none;
 
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
     font-family: var(--font-stack);
     font-weight: 400;
 }
 .search-button{
-    height: 37px;
-    padding: 0 25px;
+    height: 32px;
+    margin-right: 2px;
+    padding: 0 1.3rem;
 
     border-radius: 8px;
     border-style: none;
 
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
     font-family: var(--font-stack);
     font-weight: 500;
 }
@@ -251,30 +260,26 @@ button:hover{
     font-weight: 500;
     color: var(--brand-primary);
 }
-.nav-button{
-    font-size: var(--fontsize-lrg);
-}
-
 
 /* Main section styles */
 .content{
-    width: 85%;
+    width: 70%;
     max-width: 1500px;
-    margin: 50px auto;
+    margin: 40px auto;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .hero-section{
     position: relative;
     width: 100%;
-    height: 467px;
+    height: 25rem;
 
     display: flex;
-    gap: 50px;
+    gap: 2.5rem;
 }
 
 .hero-box{
@@ -286,10 +291,10 @@ button:hover{
     border-color: var(--brand-900);
 }
 .hero-contents{
-    margin-top: 60px;
-    margin-left: 80px;
+    margin-top: 50px;
+    margin-left: 70px;
 
-    max-width: 650px;
+    max-width: 500px;
 
     display: flex;
     flex-direction: column;
@@ -301,12 +306,13 @@ button:hover{
     }
 }
 .hero-subheading{
-    font-size: var(--fontsize-h2);
+    font-size: var(--fontsize-h3);
     font-weight: 500;
     color: var(--brand-500);
 }
 
 .hero-buttons{
+    margin-top: 10px;
     display: flex;
     gap: 20px;
 }
@@ -318,10 +324,11 @@ button:hover{
 }
 
 
+/* Item list section styles */
 
 .item-list{
     width: 100%;
-    height: 380px;
+    height: 22rem;
 
     background-color: var(--brand-900);
     border-radius: 65px 65px 15px 15px;
@@ -331,15 +338,15 @@ button:hover{
 }
 
 .item-list-contents{
-    margin: 50px 40px;
+    margin: 45px 40px;
 
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
 }
 
 .item-list-top{
-    margin: 0 40px;
+    margin: 0 30px;
 
     display: flex;
     justify-content: space-between;
@@ -353,9 +360,7 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: 15px;
-
-    font-size: var(--fontsize-reg);
+    gap: 10px;
 }
 
 .sort-text{
@@ -364,7 +369,7 @@ button:hover{
     font-weight: 500;
 }
 .sort-button{
-    height: 35px;
+    height: 30px;
     padding: 0 20px;
 
     font-size: var(--fontsize-reg);
@@ -376,12 +381,12 @@ button:hover{
 .list{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1.5rem;
 }
 
 .item-primary{
-    width: 320px;
-    height: 215px;
+    width: 280px;
+    height: 200px;
     background-color: var(--teal-250);
     border-radius: 10px;
 
@@ -395,8 +400,8 @@ button:hover{
 }
 
 .list-primary-image{
-    height: 130px;
-    width: 320px;
+    height: 120px;
+    width: 280px;
 
     border-radius: 10px 10px 0 0;
 }
@@ -408,7 +413,7 @@ button:hover{
 
     font-weight: 600;
     color: #ffffff;
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
 }
 
 .list-primary-subtitle{
@@ -418,7 +423,7 @@ button:hover{
 
     font-weight: 500;
     color: var(--green-900);
-    font-size: var(--fontsize-reg);
+    font-size: var(--fontsize-sml);
 }
 
 .list-featured{
@@ -428,8 +433,8 @@ button:hover{
 }
 
 .item-secondary{
-    width: 245px;
-    height: 215px;
+    width: 220px;
+    height: 200px;
     background-color: var(--teal-900);
     border-radius: 10px;
     border: 2px solid;
@@ -444,8 +449,8 @@ button:hover{
 }
 
 .list-secondary-image{
-    height: 130px;
-    width: 245px;
+    width: 220px;
+    height: 120px;
 
     border-radius: 10px 10px 0 0;
 }
@@ -457,7 +462,7 @@ button:hover{
 
     font-weight: 600;
     color: var(--teal-230);
-    font-size: var(--fontsize-lrg);
+    font-size: var(--fontsize-med);
 }
 
 .list-secondary-subtitle{
@@ -467,9 +472,21 @@ button:hover{
 
     font-weight: 500;
     color: var(--green-300);
-    font-size: var(--fontsize-reg);
+    font-size: var(--fontsize-sml);
 }
 
+
+/* Footer text */
+.footer-desc{
+    margin: 0 auto;
+    width: 75%;
+}
+
+.footer-text{
+    font-size: var(--fontsize-lrg);
+    text-align: center;
+    color: var(--brand-primary);
+}
 
 /* Form styles */
 .form-modal-wrapper{
@@ -489,8 +506,7 @@ button:hover{
     display: none;
     position: fixed;
 
-    height: 95vh;
-    width: 50%;
+    width: 40%;
     max-width: 950px;
     z-index: 10;
 
@@ -504,7 +520,7 @@ button:hover{
     flex-direction: column;
     gap: 30px;
 
-    width: 60%;
+    width: 70%;
     padding: 40px 60px;
 }
 
@@ -515,57 +531,61 @@ button:hover{
 
 .form-side{
     border-radius: 15px 0 0 15px;
-    background-color: var(--brand-700);
-    width: 40%;
+    background-color: var(--brand-800);
+    width: 30%;
 }
 
 .form{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 2.5rem;
+
+    margin-bottom: 10px;
 }
 
 .form-section{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .form-element{
-    display: flex;
-    flex-direction: column;
-
-    gap: 4px;
+    display: block;
+    width: 100%;
 }
 
 .form-text{
+    display: block;
+    margin-bottom: 4px;
     color: var(--text-250);
 
-    font-size: var(--fontsize-med);
+    font-size: var(--fontsize-reg);
     font-weight: 400;
 }
 
 .form-input{
-    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 15px;
     background-color: var(--text-950);
 
     border: 2px solid;
     border-color: var(--text-850);
     border-radius: 15px;
 
-    font-size: var(--fontsize-reg);
+    font-size: var(--fontsize-sml);
     font-family: var(--font-stack);
     color: var(--text-450);
 }
 
 .form-confirm{
-    padding: 0 198px;
+    padding: 0 138px;
     text-align: center;
     margin: 0 auto;
 }
 
 .form-cancel{
-    padding: 0 200px;
+    padding: 0 140px;
     text-align: center;
     margin: 0 auto;
 
