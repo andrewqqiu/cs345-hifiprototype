@@ -25,6 +25,8 @@
     --teal-600: rgba(102, 204, 187, 1);
     --teal-500: rgba(77, 178, 161, 1);
     --teal-250: rgba(0, 128, 106, 1);
+    --teal-150: #014C3F;
+
     --teal-95-0a: rgba(238, 246, 245, 1);
     --teal-900: rgba(217, 242, 238, 1);
     --teal-800: rgba(181, 227, 219, 1);
@@ -97,7 +99,6 @@ button{
 }
 button:hover{
     cursor: pointer;
-    opacity: 0.85;
 }
 
 /* General components */
@@ -118,6 +119,9 @@ button:hover{
     align-items: center;
     align-content: center;
 }
+.button-primary:hover{
+    background-color: var(--teal-150);
+}
 
 .button-secondary{
     padding: 10px 45px;
@@ -136,6 +140,9 @@ button:hover{
     align-items: center;
     align-content: center;
 }
+.button-secondary:hover{
+    background-color: var(--teal-800);
+}
 
 .button-tertiary{
     padding: 0 35px;
@@ -153,6 +160,9 @@ button:hover{
     display: flex;
     align-items: center;
     align-content: center;
+}
+.button-tertiary:hover{
+    background-color: var(--teal-900);
 }
 
 .button-text{
