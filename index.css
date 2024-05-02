@@ -308,7 +308,7 @@ button:hover{
 .hero-subheading{
     font-size: var(--fontsize-h3);
     font-weight: 500;
-    color: var(--brand-500);
+    color: var(--brand-400);
 }
 
 .hero-buttons{
@@ -422,7 +422,7 @@ button:hover{
     margin-bottom: 0;
 
     font-weight: 500;
-    color: var(--green-900);
+    color: var(--green-950);
     font-size: var(--fontsize-sml);
 }
 
@@ -434,6 +434,7 @@ button:hover{
 
 .item-secondary{
     width: 220px;
+    flex-grow: 1;
     height: 200px;
     background-color: var(--teal-900);
     border-radius: 10px;
@@ -449,7 +450,8 @@ button:hover{
 }
 
 .list-secondary-image{
-    width: 220px;
+    width: 100%;
+    object-fit: cover;
     height: 120px;
 
     border-radius: 10px 10px 0 0;
@@ -506,7 +508,7 @@ button:hover{
     display: none;
     position: fixed;
 
-    width: 40%;
+    width: 45rem;
     max-width: 950px;
     z-index: 10;
 
@@ -579,17 +581,36 @@ button:hover{
 }
 
 .form-confirm{
-    padding: 0 138px;
+    padding: 0 118px;
     text-align: center;
     margin: 0 auto;
 }
 
 .form-cancel{
-    padding: 0 140px;
+    padding: 0 120px;
     text-align: center;
     margin: 0 auto;
 
     font-size: var(--fontsize-lrg);
+}
+
+@media(max-width: 1760px){
+    .content{
+        width: 85%;
+    }
+    .header-wrapper{
+        width: 85%;
+    }
+}
+
+
+@media(max-width: 1460px){
+    .content{
+        width: 95%;
+    }
+    .header-wrapper{
+        width: 95%;
+    }
 }
 
 
