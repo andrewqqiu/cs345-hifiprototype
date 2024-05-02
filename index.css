@@ -3,12 +3,13 @@
 /* Color and style variables */
 :root {
     /* Colors */
-    --highlight: rgba(252, 14, 85, 1);
-    --highlight-2: rgba(93, 53, 252, 1);
     --brand-200: rgba(61, 49, 41, 1);
     --brand-250: rgba(77, 66, 51, 1);
     --brand-300: rgba(99, 73, 54, 1);
-    --brand-primary: rgba(121, 85, 61, 1);
+
+    /* brand color per email */
+    --brand-primary: #79553D;
+
     --brand-400: rgba(122, 99, 82, 1);
     --brand-500: rgba(140, 125, 115, 1);
     --brand-600: rgba(173, 150, 133, 1);
@@ -47,6 +48,7 @@
     --fontsize-h2: 28px;
     --fontsize-h3: 22px;
     --fontsize-lrg: 20px;
+    --fontsize-med: 18px;
     --fontsize-reg: 16px;
     --fontsize-sml: 14px;
 
@@ -467,5 +469,108 @@ button:hover{
     color: var(--green-300);
     font-size: var(--fontsize-reg);
 }
+
+
+/* Form styles */
+.form-modal-wrapper{
+    display: none;
+    position: fixed;
+    z-index: 5;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(250, 10%, 0%, 0.15);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box{
+    display: none;
+    position: fixed;
+
+    height: 95vh;
+    width: 50%;
+    max-width: 950px;
+    z-index: 10;
+
+    background-color: var(--brand-980);
+    border-radius: 15px;
+    box-shadow: 8px 8px 15px 3px rgba(81.63, 47.08, 39.49, 0.15);
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 60%;
+    padding: 40px 60px;
+}
+
+.form-heading{
+    font-weight: 700;
+    color: var(--brand-primary);
+}
+
+.form-side{
+    border-radius: 15px 0 0 15px;
+    background-color: var(--brand-700);
+    width: 40%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-element{
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.form-text{
+    color: var(--text-250);
+
+    font-size: var(--fontsize-med);
+    font-weight: 400;
+}
+
+.form-input{
+    padding: 10px;
+    background-color: var(--text-950);
+
+    border: 2px solid;
+    border-color: var(--text-850);
+    border-radius: 15px;
+
+    font-size: var(--fontsize-reg);
+    font-family: var(--font-stack);
+    color: var(--text-450);
+}
+
+.form-confirm{
+    padding: 0 198px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form-cancel{
+    padding: 0 200px;
+    text-align: center;
+    margin: 0 auto;
+
+    font-size: var(--fontsize-lrg);
+}
+
 
 

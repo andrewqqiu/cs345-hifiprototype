@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,63 @@
     <script src="scripts.js"></script>
 </head>
 <body>
+
+<div class="form-modal-wrapper" id="form-overlay">
+    <div class="form-box" id="form-box">
+        <div class="form-side">
+
+        </div>
+        <div class="form-wrapper">
+            <h2 class="form-heading">Join the Freecycling community!</h2>
+            <div id="form-ct">
+                <form class="form">
+                    <div class="form-section" id="user-details">
+                        <div class="form-element">
+                            <label class="form-text" for="given-name">Given name</label>
+                            <input type="text" class="form-input" id="given-name" name="given-name" placeholder="Your name">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-text" for="surname">Surname</label>
+                            <input type="text" class="form-input" id="surname" name="given-name" placeholder="Your surname">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-text" for="username">Username</label>
+                            <input type="text" class="form-input" id="username" name="given-name" placeholder="Username">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-text" for="password">Password</label>
+                            <input type="text" class="form-input" id="password" name="given-name" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-section" id="address-details">
+                        <div class="form-element">
+                            <label class="form-text" for="home-address">Home address</label>
+                            <input type="text" class="form-input" id="home-address" name="given-name" placeholder="Your home address">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-text" for="work-address">Work address</label>
+                            <input type="text" class="form-input" id="work-address" placeholder="Your work address">
+                        </div>
+                    </div>
+                    <div class="form-section" id="contact-details">
+                        <div class="form-element">
+                            <label class="form-text" for="mobile-number">Mobile number</label>
+                            <input type="text" class="form-input" id="mobile-number" placeholder="Your mobile number">
+                        </div>
+                        <div class="form-element">
+                            <label class="form-text" for="email">Email</label>
+                            <input type="text" class="form-input" id="email" placeholder="Your email">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <button class="button-primary form-confirm" onclick="closeForm()">Confirm</button>
+                        <button class="button-tertiary form-cancel" onclick="closeForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <header class="header">
     <div class="header-wrapper">
@@ -48,7 +105,7 @@
                     Every day, so many good things are thrown away to rot in our landfills. That’s not good for you, or for the planet.
                 </p>
                 <div class="hero-buttons">
-                    <button class="button-primary">Sign up to Freecycling!</button>
+                    <button class="button-primary" id="trigger-modal" onclick="openForm()">Sign up to Freecycling!</button>
                     <button class="button-secondary">Learn more</button>
                 </div>
             </div>
@@ -69,9 +126,9 @@
             <div class="list">
                 <div class="item-primary">
                     <img class="list-primary-image" src="image.png" />
-                    <p class="list-primary-text">Multicolour lamp</p>
-                    <p class="list-primary-subtitle">Auckland, 5 days ago</p>
-                    <div class="list-featured">Featured</div>
+                    <p class="list-primary-text">Unused pot planters</p>
+                    <p class="list-primary-subtitle">Auckland, 2 days ago</p>
+                    <div class="list-featured"></div>
                 </div>
                 <div class="item-secondary">
                     <img class="list-secondary-image" src="image.png"/>
@@ -80,13 +137,13 @@
                 </div>
                 <div class="item-secondary">
                     <img class="list-secondary-image" src="image.png"/>
-                    <p class="list-secondary-text">Multicolour lamp</p>
-                    <p class="list-secondary-subtitle">Auckland, 5 days ago</p>
+                    <p class="list-secondary-text">Pure gold bar</p>
+                    <p class="list-secondary-subtitle">Hamilton, 3 days ago</p>
                 </div>
                 <div class="item-secondary">
                     <img class="list-secondary-image" src="image.png"/>
-                    <p class="list-secondary-text">Multicolour lamp</p>
-                    <p class="list-secondary-subtitle">Auckland, 5 days ago</p>
+                    <p class="list-secondary-text">Baseball bat</p>
+                    <p class="list-secondary-subtitle">Auckland, 11 days ago</p>
                 </div>
                 <div class="item-secondary">
                     <img class="list-secondary-image" src="image.png"/>
