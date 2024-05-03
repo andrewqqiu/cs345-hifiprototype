@@ -3,44 +3,31 @@
 /* Color and style variables */
 :root {
     /* Colors */
-    --brand-200: rgba(61, 49, 41, 1);
-    --brand-250: rgba(77, 66, 51, 1);
-    --brand-300: rgba(99, 73, 54, 1);
-
     /* brand color per email */
     --brand-primary: #79553D;
 
-    --brand-400: rgba(122, 99, 82, 1);
-    --brand-500: rgba(140, 125, 115, 1);
-    --brand-600: rgba(173, 150, 133, 1);
-    --brand-700: rgba(198, 175, 159, 1);
-    --brand-800: rgba(219, 201, 189, 1);
-    --brand-900: rgba(240, 228, 219, 1);
-    --brand-950: rgba(248, 241, 237, 1);
-    --brand-980: rgba(252, 250, 248, 1);
-    --green-900: rgba(226, 240, 219, 1);
-    --green-950: rgba(240, 249, 236, 1);
-    --green-300: rgba(63, 120, 35, 1);
-    --teal-350: rgba(4, 174, 146, 1);
-    --teal-980: rgba(247, 252, 252, 1);
-    --teal-600: rgba(102, 204, 187, 1);
-    --teal-500: rgba(77, 178, 161, 1);
-    --teal-250: rgba(0, 128, 106, 1);
-    --teal-150: #014C3F;
+    --brand-400: hsl(25, 20%, 40%);
+    --brand-600: hsl(25, 20%, 60%);
+    --brand-800: hsl(25, 30%, 80%);
+    --brand-900: hsl(25, 40%, 90%);
+    --brand-950: hsl(25, 40%, 95%);
+    --brand-980: hsl(25, 45%, 98%);
 
-    --teal-95-0a: rgba(238, 246, 245, 1);
-    --teal-900: rgba(217, 242, 238, 1);
-    --teal-800: rgba(181, 227, 219, 1);
-    --teal-99-0a: rgba(252, 253, 253, 1);
-    --teal-700: rgba(140, 217, 204, 1);
-    --teal-230: rgba(1, 115, 96, 1);
+    --green-950: hsl(100, 50%, 95%);
+    --green-300: hsl(100, 55%, 30%);
 
-    --text-250: rgba(49, 41, 86, 1);
-    --text-950: rgba(239, 238, 247, 1);
-    --text-850: rgba(210, 207, 226, 1);
-    --text-450: rgba(107, 103, 126, 1);
-    --text-750: rgba(185, 182, 201, 1);
-    --text-650: rgba(159, 156, 177, 1);
+    --teal-150: hsl(170, 98%, 15%);
+    --teal-230: hsl(170, 95%, 23%);
+    --teal-250: hsl(170, 100%, 25%);
+    --teal-350: hsl(170, 95%, 35%);
+    --teal-700: hsl(170, 50%, 70%);
+    --teal-800: hsl(170, 45%, 80%);
+    --teal-900: hsl(170, 50%, 90%);
+
+    --text-250: hsl(250, 25%, 25%);
+    --text-450: hsl(250, 10%, 45%);
+    --text-850: hsl(250, 25%, 85%);
+    --text-950: hsl(250, 25%, 95%);
 
 
     /* Font sizes */
@@ -169,10 +156,6 @@ button:hover{
     background-color: var(--teal-900);
 }
 
-.button-text{
-
-}
-
 
 /* Nav styles */
 .header{
@@ -260,6 +243,7 @@ button:hover{
     font-weight: 500;
     color: var(--brand-primary);
 }
+
 
 /* Main section styles */
 .content{
@@ -489,6 +473,7 @@ button:hover{
     text-align: center;
     color: var(--brand-primary);
 }
+
 
 /* Form styles */
 .form-modal-wrapper{
