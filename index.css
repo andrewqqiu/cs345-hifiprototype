@@ -307,6 +307,11 @@ button:hover{
     border-radius: 65px 15px 65px 15px;
 }
 
+.hero-button-secondary{
+    border: 2px solid;
+    border-color: var(--teal-350);
+}
+
 
 /* Item list section styles */
 
