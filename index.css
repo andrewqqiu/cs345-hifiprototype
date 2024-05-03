@@ -320,7 +320,7 @@ button:hover{
     height: 22rem;
 
     background-color: var(--brand-900);
-    border-radius: 65px 65px 15px 15px;
+    border-radius: 35px;
 
     position: relative;
     overflow: hidden;
